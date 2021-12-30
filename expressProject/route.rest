@@ -1,0 +1,40 @@
+
+GET http://localhost:3000/users/
+
+
+
+###
+
+
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+     "username": "dev4",
+     "password": "newPass",
+     "email": "oliverDev8@gmail.com"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+     "password": "newPass",
+     "email": "oliverDev8@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/users/61b9182bc4acb1930cfdb1df
+
+###
+DELETE http://localhost:3000/subscribers/61b42766c28ce3346f9cb138
+###
+PATCH http://localhost:3000/subscribers/61acca884cd98f8b6ef9b0a8
+Content-Type: application/json
+
+{
+     "name": "new name"
+}
+
